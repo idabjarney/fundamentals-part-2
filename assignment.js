@@ -1,3 +1,5 @@
+'use strict';
+
 // FUNCTIONS -------------------------------------------------------
 
 // function describeCountry(country, population, capitalCity) {
@@ -107,6 +109,42 @@
 //   country: 'Iceland',
 //   capital: 'Reykjavik',
 //   language: 'icelandic',
-//   population: '350 thousand',
-//   neighbors: 'none'
+//   population: 350,
+//   neighbors: 0
 // };
+
+// // DOT VS. BRACKET NOTATION -----------------------------------------------------
+// console.log(`${myCountry.country} has ${myCountry.population} thousand ${myCountry.language}-speaking people, ${myCountry.neighbors} neighboring countries and a capital city called ${myCountry.capital}`);
+
+// console.log(myCountry.population + 2000000);
+// console.log(myCountry['population' - 2000000]);
+
+// myCountry.population += 2000000;
+// console.log(myCountry.population);
+
+// myCountry['population'] -= 2000000;
+// console.log(myCountry.population);
+
+// OBJECT METHODS (FUNCTION) ----------------------------------------------
+
+
+// const myCountry = {
+//   country: 'Iceland',
+//   capital: 'Reykjavik',
+//   language: 'icelandic',
+//   population: 350,
+//   neighbors: 0,
+  
+//   describe: function() {
+//     return `${this.country} has ${this.population} thousand ${this.language} speaking people, ${this.neighbors} neighboring countries and a capital called ${this.capital}`
+//   },
+  
+//   checkIsland: function() {
+//     // this.isIsland = this.neighbors.length === 0 ? true : false;
+//     return this.isIsland = this.neighbors === 0
+//   }
+// };
+// // myCountry.describe();
+// // myCountry.checkIsland();
+// console.log(myCountry.describe());
+// console.log(myCountry.checkIsland());

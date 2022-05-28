@@ -175,24 +175,24 @@
 
 // INTRODUCTION TO OBJECTS ------------------------------------------------------
 
-const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmetmann',
-  age: 2022 - 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven']
-};
-console.log(jonas);
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmetmann',
+//   age: 2022 - 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven']
+// };
+// console.log(jonas);
 
-// DOT VS. BRACKET NOTATION -----------------------------------------------------
+// // DOT VS. BRACKET NOTATION -----------------------------------------------------
 
-console.log(jonas.lastName); // dot
-console.log(jonas['lastName']);
+// console.log(jonas.lastName); // dot
+// console.log(jonas['lastName']);
 
-const nameKey = 'Name';
+// const nameKey = 'Name';
 
-console.log(jonas['first' + nameKey]); //bracket
-console.log(jonas['last' + nameKey]);
+// console.log(jonas['first' + nameKey]); //bracket
+// console.log(jonas['last' + nameKey]);
 
 // const interstedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job and friends');
 // console.log(jonas[interstedIn]);
@@ -204,11 +204,65 @@ console.log(jonas['last' + nameKey]);
 // };
 
 
-jonas.location = 'Portugal';
-jonas['twitter'] = '@asdsfd';
-console.log(jonas);
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@asdsfd';
+// console.log(jonas);
 
-// CHALLENGE
+// // CHALLENGE
 
-console.log(jonas.firstName, 'has', jonas.friends.length, 'friends, and his best friend is called', jonas.friends[0]);
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+// console.log(jonas.firstName, 'has', jonas.friends.length, 'friends, and his best friend is called', jonas.friends[0]);
+// console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+
+// OBJECT METHODS (FUNCTION)-----------------------------------------------------
+
+// ON OBJECTS
+// - an object is a collection of properties
+// - a property is an association between a name (or key) and a value
+// - a property's value can be a function, in which the property is called a METHOD
+
+
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmetmann',
+//   birthYear: 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven'],
+//   hasDriversLicense: false,
+  
+//   // calcAge: function(birthYear) {
+//   //   return 2022 - birthYear;
+//   // }
+  
+//   //   calcAge: function() {
+//   //     console.log(this);
+//   //   return 2022 - this.birthYear;
+//   // }
+  
+//   calcAge: function() {
+//     this.age = 2022 - this.birthYear;
+//     return this.age;
+//   },
+  
+//   getSummary: function() {
+//     return `${this.firstName} is a ${this.calcAge()}-year old ${this.job} and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license`
+//   } // here a ternary function is used to decide between 'a' and 'no' for the drivers license 
+// };
+
+// console.log(jonas.calcAge());
+// console.log(jonas.age);
+
+// // Challenge
+// console.log(jonas.getSummary());
+
+
+// ITERATION: THE FOR LOOP ---------------------------------------------------
+
+// //for loop keeps running whilst condition is true, and after it is met it stops
+// for(let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
+
+
+// LOOPING ARRAYS, BREAKING AND CONTINUING -------------------------------------
+
+
