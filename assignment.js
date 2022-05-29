@@ -148,3 +148,61 @@
 // // myCountry.checkIsland();
 // console.log(myCountry.describe());
 // console.log(myCountry.checkIsland());
+
+// ITERATION: THE FOR LOOP ---------------------------------------------------
+
+  // for (let i = 1; i <= 50; i++) {
+  //   console.log(`Voter number ${i} is currently voting`);
+  // }
+  
+// LOOPING ARRAYS, BREAKING AND CONTINUING -------------------------------------
+
+// const population = [144, 55, 10, 83];
+// const percentages = [];
+
+// const calculatePercentage = function percentageOfWorld1(population) {
+//   return population / 7900 * 100;
+// };
+
+// for (let i = 0; i < population.length; i++) {
+//   const perc = calculatePercentage(population[i]);
+//   percentages.push(perc);
+// }
+
+// console.log(percentages);
+
+//LOOPING BACKWARDS AND LOOPS IN LOOPS -------------------------------------------
+
+// const listOfNeighbors = [
+//   ['Canada', 'Mexico'],
+//   ['Spain'],
+//   ['Norway', 'Sweden', 'Russia']
+// ];
+
+// for (let i = 0; i < listOfNeighbors.length; i++) {
+  
+//   for (let y = 0; y < listOfNeighbors[i].length; y++) {
+//     console.log(`Neighbor: ${listOfNeighbors [i] [y]}`);
+//   };
+// };
+
+//WHILE LOOP ------------------------------------------------------------------
+
+// const population = [144, 55, 10, 83];
+// const percentages = [];
+// let i = 0;
+
+// const calculatePercentage = function (population) {
+//   return population / 7900 * 100;
+// };
+
+// while (i < population.length) {
+//   const perc = calculatePercentage(population[i]);
+//   percentages.push(perc);
+//   i++
+// }
+
+
+
+
+// console.log(percentages);
